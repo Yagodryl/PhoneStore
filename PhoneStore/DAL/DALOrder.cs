@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class Class1
+    public class DALOrder
     {
+        public int Id { get; set; }
+        public DALPhone Phone { get; set; }
+        public DALUser User { get; set; }
     }
 }
