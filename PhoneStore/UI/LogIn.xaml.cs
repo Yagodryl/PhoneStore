@@ -10,21 +10,25 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace UI
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for LogIn.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class LogIn : Window
     {
-        public MainWindow()
+        public LogIn()
         {
-            LogIn a = new LogIn();
-            a.ShowDialog();
+
             InitializeComponent();
+        }
+
+        private void Regestration_Click(object sender, RoutedEventArgs e)
+        {
+            LogIn b = new LogIn();
+            b.ShowDialog();
         }
     }
 }

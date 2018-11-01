@@ -22,10 +22,10 @@
         </Grid.ColumnDefinitions>
         <Label Content="Regestration" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" Grid.ColumnSpan="2" ></Label>
         <Label Content="Name:" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Grid.Row="1"></Label>
-        <TextBox Grid.Row="1" Grid.Column="2" Margin="4" Name="NameTextBox"></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="2" Margin="4" Name="NameTextBox" ></TextBox>
         <Label Content="Email:" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Grid.Row="2"></Label>
         <TextBox Grid.Row="2" Grid.Column="2" Margin="4" Name="EmailTextBox"></TextBox>
-        <Button Grid.Row="4" Grid.ColumnSpan="2" Content="LogIn" FontSize="20"></Button>
+        <Button Grid.Row="4" Grid.ColumnSpan="2" Content="Log In" FontSize="20"></Button>
 
 
     </Grid>

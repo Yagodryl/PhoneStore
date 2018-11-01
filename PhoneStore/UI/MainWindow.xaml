@@ -5,30 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="352" Width="450">
+        Title="MainWindow" Height="400" Width="720">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="60"></RowDefinition>
-            <RowDefinition Height="45"></RowDefinition>
-            <RowDefinition Height="45"></RowDefinition>
-            <RowDefinition ></RowDefinition>
-            <RowDefinition Height="50"></RowDefinition>
-
-            <RowDefinition ></RowDefinition>
-        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="70"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
-
+            <ColumnDefinition Width="180"></ColumnDefinition>
+       
         </Grid.ColumnDefinitions>
-        <Label Content="Phone Store" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" Grid.ColumnSpan="2" Grid.RowSpan="1"></Label>
-        <Label Content="User:" Grid.Row="1" VerticalAlignment="Stretch" FontSize="20"></Label>
-        <TextBox Name="UserTextBox" Grid.Row="1" Grid.Column="2" Margin="4"></TextBox>
-        <Label Content="Email:" VerticalAlignment="Bottom" Grid.Row="2" FontSize="20"></Label>
-        <TextBox Name="EmailUserTextBox" Grid.Row="2" Grid.Column="2" Margin="4"></TextBox>
-        <Button Grid.Row="4" Grid.ColumnSpan="2" Content="LogIn" FontSize="20"  ></Button>
-        <Button Grid.Row="5" Grid.ColumnSpan="2" Content="Regestration" FontSize="20" Height="50" Width="130" ></Button>
+        <ListView></ListView>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
 
+            <Grid Grid.Column="1" Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition Width="53" ></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBox Grid.Column="0" Grid.Row="2" Margin="5" FontSize="15" VerticalAlignment="Center"></TextBox>
+                <Button Content="Searge" FontSize="15"  Name="Searge" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left"></Button>
 
+            </Grid>
+            
+            <Button Content="ADD" FontSize="15" Margin="15" Name="AddPhone" Grid.Row="0" ></Button>
+            <Button Content="Go To Cart" FontSize="15" Margin="15" Name="Cart" Grid.Row="1"></Button>
+            <TextBlock Grid.Row="3" VerticalAlignment="Bottom" FontSize="20" ></TextBlock>
+           
+
+        </Grid>
+    
     </Grid>
+    
 </Window>
