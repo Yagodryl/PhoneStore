@@ -54,11 +54,9 @@
     <Compile Include="BLLOrder.cs" />
     <Compile Include="BLLPhone.cs" />
     <Compile Include="BLLUser.cs" />
-    <Compile Include="Contracts\ICRUD.cs" />
-    <Compile Include="IService1.cs" />
+    <Compile Include="Contracts\ITrading.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Realization\CRUD.cs" />
-    <Compile Include="Service1.cs" />
+    <Compile Include="Realization\TradingService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

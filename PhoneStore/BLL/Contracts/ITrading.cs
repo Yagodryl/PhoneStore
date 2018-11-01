@@ -8,15 +8,14 @@ using System.Threading.Tasks;
 namespace BLL.Contracts
 {
     [ServiceContract]
-    public interface ICRUD<T> where T:class 
+    public interface ITrading
     {
         [OperationContract]
-        void Create(T x);
+        BLLOrder Buy(BLLUser user,BLLPhone product);
         [OperationContract]
-        void Delete(T x);
+        void Delete(BLLOrder order);
+        IEnumerable<BLLOrder> GetAllOrders();
         [OperationContract]
-        void Update(T x);
-        [OperationContract]
-        IEnumerable<T> Get();
+        BLLOrder GetOrder(BLLUser user);
     }
 }
